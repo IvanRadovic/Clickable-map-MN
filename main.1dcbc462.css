@@ -1,0 +1,258 @@
+body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-family:Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;margin:0}
+code{font-family:source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace}
+::-webkit-scrollbar{background-color:#fff;width:.25rem}
+::-webkit-scrollbar-thumb{background-color:#34343451;border-radius:12px;height:.25rem;width:100%}
+::-webkit-scrollbar-track{height:0;width:0}
+::-webkit-scrollbar:horizontal{display:none}.App{box-sizing:border-box;flex-direction:column;font-family:Roboto!important;justify-content:center;padding-bottom:5rem;padding-left:3rem;padding-top:3rem;text-align:center}.App,.dataHolder{align-items:center;display:flex}.dataHolder{gap:5rem;justify-content:space-between;position:relative;transition:1s}@-webkit-keyframes load{0%{opacity:0}to{opacity:1}}@keyframes load{0%{opacity:0}to{opacity:1}}.dataHolder h1{color:#4c3a4c;max-width:25rem}.heder{align-items:center;box-sizing:border-box;display:flex;gap:5rem}.heder h1{color:#029852;font-size:3rem}.textContainer{-webkit-font-feature-settings:"smcp";font-feature-settings:"smcp";-webkit-animation:load .7s ease-in-out;animation:load .7s ease-in-out;color:#029852;font-variant:small-caps;text-align:left;transition-duration:1s}.textContainer h3{color:#029852;font-size:48px;font-style:normal;font-weight:800;line-height:56px}.dataHolder img{left:15rem;position:absolute;scale:.5;top:25rem;-webkit-transform:rotate(-30deg);transform:rotate(-30deg)}.innerContainerText{border-radius:12px;box-shadow:0 0 15px rgba(0,0,0,.1);flex-direction:column;gap:1rem;height:531px;justify-content:flex-start;overflow:auto;padding:1rem;width:732px}.innerContainerText,.textHolder{align-items:center;box-sizing:border-box;display:flex}.textHolder{background-color:#235f28;border-radius:6px;color:#fff;font-family:Roboto;font-size:24px;font-style:normal;font-weight:800;justify-content:left;line-height:28px;padding:.5rem 1rem;width:692px}@media only screen and (max-width:1400px){.App{box-sizing:border-box;justify-content:center;max-height:100%;max-width:100%;overflow:visible!important;padding-bottom:5rem;padding-left:0;padding-top:0;text-align:center}.App,.dataHolder{align-items:center;display:flex;flex-direction:column}.dataHolder{gap:1rem;justify-content:space-between;position:relative;transition:1s}.dataHolder h1{color:#029852;max-width:20rem}.heder{align-items:center;box-sizing:border-box;display:flex;flex-direction:column-reverse;gap:1rem;margin-top:1rem}.heder h1{color:#0298526a;font-size:2rem}.textContainer{color:#029852;text-align:left;transition-duration:1s}.textContainer h3{color:#029852;font-size:1.7rem;font-style:normal;font-weight:800;line-height:56px;text-align:center}.dataHolder img{left:5rem;position:absolute;scale:.3;top:18rem;-webkit-transform:rotate(-30deg);transform:rotate(-30deg)}.innerContainerText{border-radius:12px;box-shadow:0 0 15px rgba(0,0,0,.1);flex-direction:column;gap:1rem;height:531px;justify-content:flex-start;overflow:auto;padding:1rem;width:22rem}.innerContainerText,.textHolder{align-items:center;box-sizing:border-box;display:flex}.textHolder{background-color:#235f28;border-radius:6px;color:#fff;font-family:Roboto;font-size:18px;font-style:normal;font-weight:800;justify-content:left;line-height:28px;max-width:21rem;padding:.5rem 1rem}}.MapStyle_map__louln{width:509px}.MapStyle_map__louln path,polygon{fill:#006BB1;stroke:#fff;stroke-width:5px}.MapStyle_map__louln path:hover,.MapStyle_map__louln polygon:hover{fill:#029852;cursor:pointer;transition:.25s}.MapStyle_map__louln path:active,.MapStyle_map__louln path:focus,.MapStyle_map__louln path:visited{fill:#029852}.MapStyle_map__louln path:hover:before{color:red;content:"city";font-size:10rem;position:absolute}@media only screen and (max-width:1400px){.MapStyle_map__louln{width:350px}}
+
+
+#root{
+    position: relative;
+    top: 0;
+}
+
+#opstinaPljevlja,
+#opstinaPodgorica,
+#opstinaBijelo-Polje,
+#opstinaMojkovac,
+#opstinaCetinje,
+#opstinaKolašin,
+#opstinaRožaje,
+#opstinaNikšić,
+#opstinaPlav,
+#opstinaGusinje,
+#opstinaBerane,
+#opstinaBar,
+#opstinaUlcinj,
+#opstinaBudva,
+#opstinaHerceg-Novi,
+#opstinaKotor,
+#opstinaAndrijevica,
+#opstinaDanilovgrad,
+#opstinaPlužine,
+#opstinaTivat,
+#opstinaŠavnik,
+#opstinaŽabljak,
+#opstinaTuzi,
+#opstinaZeta,
+#opstinaPetnjica{
+    background-color: #EEEEEE;
+    border-radius: 10px;
+    width: 60%;
+    display: none;
+    position: absolute;
+}
+
+#opstinaPljevlja{
+    top: 27%;
+    left: 50%;
+}
+
+#opstinaPodgorica{
+    top: 65%;
+    left: 43%;
+}
+
+#opstinaMojkovac{
+    top: 38%;
+    left: 55%;
+}
+
+#opstinaCetinje{
+    top: 73%;
+    left: 25%;
+}
+
+#opstinaKolašin{
+    top: 47%;
+    left: 55%;
+}
+
+#opstinaRožaje{
+    top: 46%;
+    left: 34%;
+}
+
+#opstinaNikšić{
+    top: 52%;
+    left: 26%;
+}
+
+#opstinaPlav{
+    top: 57%;
+    left: 24%;
+}
+
+#opstinaGusinje{
+    top: 62%;
+    left: 16%;
+}
+
+#opstinaBerane{
+    top: 50%;
+    left: 20%;
+}
+
+#opstinaBar{
+    top: 90%;
+    left: 37%;
+}
+
+#opstinaUlcinj{
+    top: 96%;
+    left: 18%;
+}
+
+#opstinaBudva{
+    top: 78%;
+    left: 25%;
+}
+
+#opstinaKotor{
+    top: 72%;
+    left: 16%;
+}
+
+#opstinaAndrijevica{
+    top: 53%;
+    left: 10%;
+}
+
+#opstinaDanilovgrad{
+    top: 62%;
+    left: 37%;
+}
+
+#opstinaPlužine{
+    top: 34%;
+    left: 21%;
+}
+
+#opstinaTivat{
+    top: 68%;
+    left: 14%;
+}
+
+#opstinaŠavnik{
+    top: 40%;
+    left: 37%;
+}
+
+#opstinaŽabljak{
+    top: 40%;
+    left: 37%;
+}
+
+#opstinaTuzi{
+    top: 74%;
+    left: -12%;
+}
+
+#opstinaZeta{
+    top: 76%;
+    left: 40%;
+}
+
+#opstinaPetnjica{
+    top: 39%;
+    left: 26%;
+}
+/* treba da se ovo pogleda id..... 2 rijeci */
+#opstinaHerceg-Novi{
+    top: 68%;
+    left: 5%;
+}
+
+#opstinaBijelo-Polje{
+    top: 36%;
+    left: 11%;
+}
+
+.opstinaNaslov{
+    padding: 10px 10px;
+    color: #333350;
+    font-size: 24px;
+}
+
+.opstinaProjekat{
+    padding: 0px 10px 10px 10px;
+    color: #006BB1;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+
+a .opstinaProjekat {
+    padding: 5px;
+    text-decoration: none;
+    color: #006BB1;
+    /* border-bottom: 1px solid #8896abbd; */
+}
+
+.opstinaProjekat:hover{
+    background-color: #029852;
+    padding: 5px;
+    border-radius: 10px;
+    color: white !important;
+}
+
+.opstinaProjekat i {
+    padding: 5px;
+}
+
+/* Responsive mapa */
+
+
+@media(max-width:1440px){
+    .opstina_projekti{
+        width: 60% !important;
+    }
+}
+
+
+@media(max-width:1400px){
+
+    .opstinaProjekat{
+        padding: 0px 5px 5px 5px;
+    }
+    .opstinaNaslov {
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+
+    .naslov-projekta-mapa{
+        font-size: 11px;
+    }
+    
+}
+
+@media(max-width:991px ){
+    .opstina_projekti{
+        top: -10%!important;
+        left: 50%!important;
+    }
+
+}
+
+@media(max-width:600px){
+    .opstina_projekti{
+        top: -15%!important;
+        left: -8%!important;
+    }
+}
+
+@media(max-width:575px){
+    .naslov-projekta-mapa{
+        font-size: 9px !important;
+    }
+    .opstina_projekti{
+        width: 100% !important;
+        top: -22%!important;
+        left: 0%!important;
+    }    
+}
+
+
+/*# sourceMappingURL=main.1dcbc462.css.map*/
